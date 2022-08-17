@@ -170,6 +170,7 @@ nav {
     color: #ffffff;
     font-size: 11px;
     font-weight: 300;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -181,6 +182,15 @@ nav {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+}
+
+.subtitle {
+    margin-top: 19px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    color: #222222;
 }
 
 .reasons .reasons_block {
@@ -217,4 +227,8 @@ nav {
     font-size: 15px;
     font-weight: 300;
     line-height: 21px;
+}
+
+.mobile {
+    min-height: 864px;
 }
