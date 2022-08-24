@@ -320,4 +320,49 @@ nav
 .require
   padding: 68px 0 84px 0
   &_block
-    
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0px
+  &_title
+    font-style: normal
+    font-weight: 400
+    font-size: 22px
+    line-height: 24px
+    align-items: center
+    color: #1CA8C3
+  &_list
+    list-style-type: none
+    padding-left: 52px
+    margin-top: 22px
+    li
+      position: relative
+      margin-bottom: 10px
+      font-style: normal
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      color: #222222
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        left: -29px
+        top: 3px
+        width: 21px
+        height: 20px
+        background: url('../icons/check_blue 6.svg') center (center/cover) no-repeat
+  &_descr
+    margin-top: 25px
+    font-style: normal
+    font-weight: 300
+    font-size: 17px
+    line-height: 24px
+    color: $main-color
+  .warning
+    .require_title
+      color: $second-color
+    .require_list
+      li
+        &::before
+          background: url('../icons/check_red 1.svg') center (center/cover) no-repeat
+        
