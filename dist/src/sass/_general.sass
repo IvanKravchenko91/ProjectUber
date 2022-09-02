@@ -6,6 +6,9 @@ nav
   min-height: 53px
   background-color: black
 
+.hamburger 
+  display: none
+
 .menu
   display: flex
   justify-content: space-between
@@ -13,14 +16,14 @@ nav
   margin: 0
   list-style-type: none
 
-  .menu_link
+  &_link
     font-style: normal
     font-weight: 300
     font-size: 15px
     align-items: center
     color: #FFFFFF
 
-  .menu_item
+  &_item
     border-right: 2px dotted black
     padding-right: 29px
     &:last-child
@@ -32,12 +35,12 @@ nav
   height: 86px
   background-color: rgba(0, 0, 0, 0.6)
 
-  .subheader_link
+  &_link
     display: block
     margin-top: 17px
     max-height: 100%
 
-  .subheader_official
+  &_official
     margin-top: 6px
     overflow: 0.5
     font-style: normal
@@ -45,7 +48,7 @@ nav
     font-size: 13px
     color: #FFFFFF
 
-  .subheader_call
+  &_call
     margin-top: 22px
     font-style: normal
     font-weight: 300
@@ -53,7 +56,7 @@ nav
     text-align: right
     color: #FFFFFF
 
-  .subheader_phone
+  &_phone
     display: block
     font-style: normal
     font-weight: 500
@@ -62,21 +65,20 @@ nav
     text-transform: uppercase
     color: #FFFFFF
 
-  .subheader_btn
-    margin-top: 19px
-    font-style: normal
-    font-weight: 400
-    font-size: 14px
-    line-height: 46px
-    text-align: center
-    text-transform: uppercase
-    color: #FFFFFF
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-    width: 172px
-    height: 46px
-    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
-    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
-    border-radius: 4px
+  &_btn
+		display: block
+		margin: 118px auto 0 auto
+		width: 259px
+		height: 63px
+		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		text-transform: uppercase
     +btn_hover
 
 .promo
@@ -84,10 +86,7 @@ nav
   background: url(../img/uber_bg.png) center (center / cover) no-repeat
   padding: 150px 0 135px 0
 
-  /* transform: translateY(-84px);
-   *z-index: -1;
-
-  .promo_header
+  &_header
     margin: 0
     margin-top: 68px
     font-style: normal
@@ -98,7 +97,7 @@ nav
     text-transform: uppercase
     color: #FFFFFF
 
-  .promo_subheader
+  &_subheader
     margin: 0
     margin-top: 20px
     font-style: normal
@@ -109,7 +108,7 @@ nav
     text-transform: uppercase
     color: #FFFFFF
 
-  .promo_descr
+  &_descr
     margin-top: 23px
     font-style: normal
     font-weight: 400
@@ -118,24 +117,21 @@ nav
     text-align: center
     color: #FFFFFF
 
-  .promo_btn
-    display: block
-    margin: 0 auto
-    margin-top: 115px
-    font-style: normal
-    font-weight: 400
-    font-size: 18px
-    line-height: 63px
-    text-align: center
-    text-transform: uppercase
-    color: #FFFFFF
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-    width: 259px
-    height: 63px
-    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
-    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
-    border-radius: 4px
-    +btn_hover
+  &_btn
+		display: block
+		margin: 118px auto 0 auto
+		width: 259px
+		height: 63px
+		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		text-transform: uppercase
+		+btn_hover
 
 .reasons
   padding: 71px 0 65px 0
@@ -350,9 +346,9 @@ nav
     line-height: 24px
     color: $main-color
   .warning
-    .require_title
+    &_title
       color: $second-color
-    .require_list
+    &_list
       li
         &::before
           background: url('../icons/check_red 1.svg') center (center/cover) no-repeat
@@ -442,3 +438,6 @@ footer
       margin-top: 19px
       text-transform: uppercase
       text-align: center
+
+.xs-visible 
+  display: none
